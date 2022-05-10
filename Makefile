@@ -6,7 +6,8 @@ OBJDIR=		obj
 
 INCDIR=		inc
 
-SRC=		
+SRC=		main.c						\
+			parsing.c
 
 
 OBJ=		${addprefix ${OBJDIR}/,		\
@@ -29,7 +30,7 @@ ${OBJDIR}:
 			mkdir -p obj
 
 ${OBJDIR}/%.o:	%.c ${INC}
-				${CC} ${CFLAGS} -Imlx -c $< -o $@
+			${CC} ${CFLAGS} -Imlx -c $< -o $@
 
 
 clean:
