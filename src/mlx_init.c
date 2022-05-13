@@ -6,11 +6,11 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:16:38 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/10 15:58:08 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/13 22:44:50 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../inc/so_long.h"
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 {

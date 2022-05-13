@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/10 14:26:33 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/13 22:40:06 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ typedef struct s_data
 	int		line_length;
 	int		endian;
 }				t_data;
+
+char	**parsing(int argc, char *argv[]);
 
 #endif
