@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:04:50 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/13 22:44:31 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/14 01:15:28 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	main(int argc, char *argv[])
 	char	**map;
 
 	i = 0;
+	return (0);
 	map = parsing(argc, argv);
 	while (map[i])
 	{

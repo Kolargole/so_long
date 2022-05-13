@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:00:15 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/13 22:53:07 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/14 01:11:36 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ char	**parsing(int argc, char *argv[])
 		return (0);
 	fd = open(argv[1], O_RDONLY);
 	i = 1;
+	map = 0;
 	map[0] = get_next_line(fd);
 	while (map[i - 1][0] != '\0')
 	{

@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/13 22:40:06 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/14 01:08:23 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include "../Libft/libft.h"
-# include "../mlx/mlx.h"
+# include "../mlx_linux/mlx.h"
 
 typedef struct s_data
 {
