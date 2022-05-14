@@ -7,7 +7,8 @@ OBJDIR=		obj
 INCDIR=		inc
 
 SRC=		main.c						\
-			parsing.c
+			parsing.c					\
+			checking.c
 
 
 OBJ=		${addprefix ${OBJDIR}/,		\
@@ -15,33 +16,34 @@ OBJ=		${addprefix ${OBJDIR}/,		\
 
 INC=		${INCDIR}/so_long.h
 
+LIB=		Libft/libft.a
+
 CC=			cc
 
 CFLAGS=		-Wall -Wextra -Werror
 
-all:		${OBJDIR} ${NAME}
+all:		lib ${OBJDIR} ${NAME}
 
-${NAME}:	${OBJ} ${INC}
-			make -C Libft
-			make -C mlx
-			${CC} ${OBJ} Libft/libft.a mlx/libmlx.dylib -Lmlx -lmlx -framework OpenGL -framework AppKit -o ${NAME}
+${NAME}:	${OBJ} ${INC} Libft/libft.h
+			${CC} ${OBJ} ${LIB} -o ${NAME}
+
+lib:
+			${MAKE} -C Libft
 
 ${OBJDIR}:
 			mkdir -p obj
 
 ${OBJDIR}/%.o:	%.c ${INC}
-			${CC} ${CFLAGS} -Imlx -c $< -o $@
+			${CC} ${CFLAGS} -c $< -o $@
 
 
 clean:
 			rm -rf ${OBJDIR}
 			make clean -C Libft
-			make clean -C mlx
 
 fclean:		clean
-			${RM} ${NAME} libft.a
-			make fclean -C Libft
-			make fclean -C mlx
+			${RM} ${NAME}
+			${RM} ${LIB}
 
 re:			fclean all
 

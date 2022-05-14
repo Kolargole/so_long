@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/14 01:56:38 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/14 03:25:55 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,11 @@ typedef struct s_data
 	int		endian;
 }				t_data;
 
+// parsing :
 char	*parsing(int argc, char *argv[]);
+int		error_check(char *map);
 int		shape_check(char *map);
+int		wall_check(char *map);
+int		components_check(char *map);
 
 #endif
