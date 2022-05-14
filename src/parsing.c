@@ -6,27 +6,28 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:00:15 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/14 01:11:36 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/14 02:15:57 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-char	**parsing(int argc, char *argv[])
+char	*parsing(int argc, char *argv[])
 {
 	int		fd;
 	int		i;
-	char	**map;
+	char	*map;
+	char	*buf;
 
 	if (argc != 2)
 		return (0);
 	fd = open(argv[1], O_RDONLY);
-	i = 1;
-	map = 0;
-	map[0] = get_next_line(fd);
-	while (map[i - 1][0] != '\0')
+	i = 0;
+	map = NULL;
+	while (buf)
 	{
-		map[i] = get_next_line(fd);
+		buf = get_next_line(fd);
+		map = gnl_strjoin(map, buf);
 		i++;
 	}
 	return (map);
@@ -49,33 +50,40 @@ char	**parsing(int argc, char *argv[])
 	
 // }
 
-// int	shape_check(char *map)
-// {
-// 	int	i;
-// 	int	l_len;
-// 	int	l_count;
+int	shape_check(char *map)
+{
+	int	i;
+	int	l_len;
+	int	l_count;
 
-// 	i = 0;
-// 	while (map[i] != '\n')
-// 		i++;
-// 	l_len = i;
-// 	l_count = 1;
-// 	while (map[i])
-// 	{
-// 		if (map[i] == '\n')
-// 		{
-// 			if (l_len == (i - (l_len * l_count)))
-// 				l_count++;
-// 			else
-// 			{
-// 				write(1, "Error\n", 6);
-// 				return (0);
-// 			}
-// 		}
-// 		i++;
-// 	}
-// 	return (1);
-// }
+	i = 0;
+	while (map[i] != '\n')
+		i++;
+	l_len = i;
+	l_count = 0;
+	while (map[i])
+	{
+		if (map[i] == '\n')
+		{
+			if (l_len == (i - l_count - (l_len * l_count)))
+				l_count++;
+			else
+			{
+				write(1, "Error\n", 6);
+				return (0);
+			}
+		}
+		i++;
+	}
+	if (l_len == (i - l_count - (l_len * l_count)))
+		l_count++;
+	else
+	{
+		write(1, "Error\n", 6);
+		return (0);
+	}
+	return (1);
+}
 
 // int	wall_check(char **map)
 // {
