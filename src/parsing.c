@@ -6,24 +6,23 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:00:15 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/14 03:33:02 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/16 14:57:20 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-char	*parsing(int argc, char *argv[])
+char	*parsing(char *map_file)
 {
 	int		fd;
 	int		i;
 	char	*map;
 	char	*buf;
 
-	if (argc != 2)
-		return (0);
-	fd = open(argv[1], O_RDONLY);
+	fd = open(map_file, O_RDONLY);
 	i = 0;
 	map = NULL;
+	buf = ft_strdup("1");
 	while (buf)
 	{
 		buf = get_next_line(fd);

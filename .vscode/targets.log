@@ -1,0 +1,1955 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C Libft
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon May 16 18:39:15 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 47)
+OBJ = ${addprefix ${OBJDIR}/, ${SRC:.c=.o}}
+# makefile (from `Makefile', line 7)
+INCDIR = inc
+# makefile (from `Makefile', line 9)
+SRC = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_memchr.c ft_strdup.c ft_strlcat.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_putstr_fd.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_split.c ft_itoa.c get_next_line.c get_next_line_utils.c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/vimercie/Documents/vimercie_GH/so_long/Libft
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 56)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/vscode-ipc-f1a328be-b388-4b02-ab75-a9473dea2ac6.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.lPkqyXrCM6/Render
+# environment
+PATH = /Users/vimercie/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/opt/X11/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 3)
+VPATH = src/
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.SGHEie1W2k/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/vimercie/Homebrew/Temp
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.iLayDZ47P2/org.xquartz:0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/vimercie/Documents/vimercie_GH/so_long
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/vimercie
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/vimercie/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = vimercie
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/vimercie/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+HOMEBREW_CACHE = /tmp/vimercie/Homebrew/Caches
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 54)
+CC = gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = vimercie
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 1)
+ 
+NAME = libft.a
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 50)
+INC = ${addprefix ${INCDIR}/, libft.h get_next_line.h}
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/vimercie/Library/Application Support/Code/1.67.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1719D:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 5)
+OBJDIR = obj
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a7
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 1
+# environment
+LANG = C
+# environment
+VSCODE_PID = 357
+# variable set hash-table stats:
+# Load=78/1024=8%, Rehash=0, Collisions=3/119=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777229, inode 3159965): 8 files, no impossibilities.
+# src (device 16777229, inode 3207532): 38 files, no impossibilities so far.
+# inc (device 16777229, inode 3207534): No files, no impossibilities so far.
+
+# 46 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+obj/%.o: %.c inc/libft.h inc/get_next_line.h
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+obj/ft_strlcpy.o: src/ft_strlcpy.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strlcpy'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strncmp.o: src/ft_strncmp.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strncmp'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_isalnum.o: src/ft_isalnum.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_isalnum'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strdup.o: src/ft_strdup.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strdup'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_putnbr_fd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_memmove.o: src/ft_memmove.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_memmove'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+all: obj libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/get_next_line_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:27:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_strchr.o: src/ft_strchr.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strchr'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_calloc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/get_next_line.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 16:11:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_substr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ 
+obj/ft_toupper.o: src/ft_toupper.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_toupper'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strnstr.o: src/ft_strnstr.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strnstr'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_isalpha.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_putstr_fd.o: src/ft_putstr_fd.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_putstr_fd'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_atoi.o: src/ft_atoi.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_atoi'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/get_next_line.o: src/get_next_line.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `get_next_line'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_strlcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ft_putchar_fd.o: src/ft_putchar_fd.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_putchar_fd'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_isascii.o: src/ft_isascii.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_isascii'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:23:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strncmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_strtrim.o: src/ft_strtrim.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strtrim'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_isalnum.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+libft.a: obj/ft_isalnum.o obj/ft_isalpha.o obj/ft_isascii.o obj/ft_isdigit.o obj/ft_isprint.o obj/ft_strlen.o obj/ft_memset.o obj/ft_bzero.o obj/ft_memcpy.o obj/ft_memmove.o obj/ft_strlcpy.o obj/ft_toupper.o obj/ft_tolower.o obj/ft_strchr.o obj/ft_strrchr.o obj/ft_strncmp.o obj/ft_memcmp.o obj/ft_strnstr.o obj/ft_atoi.o obj/ft_calloc.o obj/ft_memchr.o obj/ft_strdup.o obj/ft_strlcat.o obj/ft_substr.o obj/ft_strjoin.o obj/ft_strtrim.o obj/ft_strmapi.o obj/ft_striteri.o obj/ft_putstr_fd.o obj/ft_putchar_fd.o obj/ft_putendl_fd.o obj/ft_putnbr_fd.o obj/ft_split.o obj/ft_itoa.o obj/get_next_line.o obj/get_next_line_utils.o inc/libft.h inc/get_next_line.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 64):
+	ar rc ${NAME} ${OBJ}
+	
+
+# Not a target:
+src/ft_strdup.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_memmove.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_putendl_fd.o: src/ft_putendl_fd.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_putendl_fd'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strmapi.o: src/ft_strmapi.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strmapi'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_toupper.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_memcpy.o: src/ft_memcpy.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_memcpy'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_strnstr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_itoa.o: src/ft_itoa.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_itoa'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_putstr_fd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_memcmp.o: src/ft_memcmp.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_memcmp'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strlen.o: src/ft_strlen.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strlen'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_isdigit.o: src/ft_isdigit.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_isdigit'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/get_next_line.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:27:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 76):
+	rm -f ${NAME}
+	
+
+obj/ft_memchr.o: src/ft_memchr.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_memchr'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_memset.o: src/ft_memset.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_memset'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_putchar_fd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_isascii.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:18
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj:
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 67):
+	mkdir -p obj
+	
+
+obj/ft_tolower.o: src/ft_tolower.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_tolower'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_strtrim.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_strrchr.o: src/ft_strrchr.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strrchr'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_strjoin.o: src/ft_strjoin.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strjoin'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_split.o: src/ft_split.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_split'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+inc/libft.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:36:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/ft_strlcat.o: src/ft_strlcat.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_strlcat'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_putendl_fd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strmapi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_bzero.o: src/ft_bzero.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_bzero'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 79):
+	
+
+obj/ft_isprint.o: src/ft_isprint.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_isprint'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 73):
+	rm -rf ${OBJDIR}
+	
+
+# Not a target:
+src/ft_memcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_itoa.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:37
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_memcmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strlen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_isdigit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_atoi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:23:45
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_striteri.o: src/ft_striteri.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_striteri'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_memchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_memset.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_tolower.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strrchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_strjoin.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_split.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_putnbr_fd.o: src/ft_putnbr_fd.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_putnbr_fd'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/get_next_line_utils.o: src/get_next_line_utils.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `get_next_line_utils'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_strlcat.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_calloc.o: src/ft_calloc.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_calloc'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+obj/ft_substr.o: src/ft_substr.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_substr'
+#  Last modified 2022-05-16 18:30:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_bzero.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_isprint.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:24:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/ft_isalpha.o: src/ft_isalpha.c inc/libft.h inc/get_next_line.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_isalpha'
+#  Last modified 2022-05-16 18:29:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 70):
+	${CC} ${CFLAGS} -c $< -o $@
+	
+
+# Not a target:
+src/ft_striteri.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 15:25:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=84/1024=8%, Rehash=0, Collisions=6/611=1%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# General (`VPATH' variable) search path:
+# src
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon May 16 18:39:15 2022
+
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C mlx
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon May 16 18:39:15 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 8)
+OBJ = $(SRC:.swift=.o)
+# makefile (from `Makefile', line 7)
+SRC = interface.swift $(MODULE_SRC)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/vimercie/Documents/vimercie_GH/so_long/mlx
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 12)
+CFLAGS = -O3
+# makefile (from `Makefile', line 5)
+MODULE_OBJ = $(MODULE_SRC:.swift=.swiftmodule)
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/vscode-ipc-f1a328be-b388-4b02-ab75-a9473dea2ac6.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.lPkqyXrCM6/Render
+# environment
+PATH = /Users/vimercie/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/opt/X11/bin
+# makefile (from `Makefile', line 11)
+C_OBJ = $(C_SRC:.c=.o)
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.SGHEie1W2k/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/vimercie/Homebrew/Temp
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.iLayDZ47P2/org.xquartz:0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/vimercie/Documents/vimercie_GH/so_long
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/vimercie
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/vimercie/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = vimercie
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `Makefile', line 4)
+MODULE_SRC = mlx_image.swift mlx_window.swift mlx_init.swift
+# environment
+ZSH = /Users/vimercie/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+HOMEBREW_CACHE = /tmp/vimercie/Homebrew/Caches
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = vimercie
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 14)
+NAME = libmlx.dylib
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 16)
+INC = -I.
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/vimercie/Library/Application Support/Code/1.67.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 10)
+C_SRC = mlx_xpm.c mlx_png.c mlx_string_put.c
+# environment
+__CF_USER_TEXT_ENCODING = 0x1719D:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a7
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 1
+# environment
+LANG = C
+# environment
+VSCODE_PID = 357
+# variable set hash-table stats:
+# Load=78/1024=8%, Rehash=0, Collisions=5/113=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777229, inode 3159969): 28 files, 3 impossibilities.
+
+# 28 files, 3 impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.swift
+#  commands to execute (from `Makefile', line 27):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@
+	
+
+%.swiftmodule: %.swift
+#  commands to execute (from `Makefile', line 30):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@ -emit-module -module-name $(patsubst %.swift,%,$<) -module-link-name $(patsubst %.swift,%,$<)
+	
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+interface.o: interface.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `interface'
+#  Last modified 2022-05-16 18:30:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@
+	
+
+mlx_window.o: mlx_window.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_window'
+#  Last modified 2022-05-16 18:30:05
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@
+	
+
+all: libmlx.dylib
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mlx_image.o: mlx_image.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_image'
+#  Last modified 2022-05-16 18:30:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@
+	
+
+mlx_init.o: mlx_init.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_init'
+#  Last modified 2022-05-16 18:30:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mlx_string_put.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 18:30:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 13:46:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+interface.swift:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 13:46:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mlx_window.swift:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 13:46:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mlx_image.swift:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 13:46:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+libmlx.dylib: mlx_image.swiftmodule mlx_window.swiftmodule mlx_init.swiftmodule interface.o mlx_image.o mlx_window.o mlx_init.o mlx_xpm.o mlx_png.o mlx_string_put.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-16 18:30:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 22):
+	swiftc $(OPTI) $(INC) -o $(NAME) -emit-library $(OBJ) $(C_OBJ) -lz
+	
+
+# Not a target:
+mlx_init.swift:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 13:46:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 33):
+	rm -f $(NAME) $(OBJ) $(MODULE_OBJ) $(C_OBJ) *.swiftdoc *~
+	
+
+mlx_window.swiftmodule: mlx_window.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_window'
+#  Last modified 2022-05-16 18:30:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 30):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@ -emit-module -module-name $(patsubst %.swift,%,$<) -module-link-name $(patsubst %.swift,%,$<)
+	
+
+mlx_image.swiftmodule: mlx_image.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_image'
+#  Last modified 2022-05-16 18:30:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 30):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@ -emit-module -module-name $(patsubst %.swift,%,$<) -module-link-name $(patsubst %.swift,%,$<)
+	
+
+mlx_init.swiftmodule: mlx_init.swift
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mlx_init'
+#  Last modified 2022-05-16 18:30:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 30):
+	swiftc $(OPTI) $(INC) -parse-as-library -c $< -o $@ -emit-module -module-name $(patsubst %.swift,%,$<) -module-link-name $(patsubst %.swift,%,$<)
+	
+
+# Not a target:
+mlx_png.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 18:30:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mlx_xpm.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 18:30:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=20/1024=2%, Rehash=0, Collisions=0/70=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon May 16 18:39:15 2022
+
+ 
+
+# Make data base, printed on Mon May 16 18:39:15 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 16)
+OBJ = ${addprefix ${OBJDIR}/, ${SRC:.c=.o}}
+# makefile (from `Makefile', line 7)
+INCDIR = inc
+# makefile (from `Makefile', line 9)
+SRC = main.c mlx_main.c parsing.c checking.c utils.c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/vimercie/Documents/vimercie_GH/so_long
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 27)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/vscode-ipc-f1a328be-b388-4b02-ab75-a9473dea2ac6.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.lPkqyXrCM6/Render
+# environment
+PATH = /Users/vimercie/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/opt/X11/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 3)
+VPATH = src/
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 21)
+LIB = Libft/libft.a
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.SGHEie1W2k/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/vimercie/Homebrew/Temp
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.iLayDZ47P2/org.xquartz:0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/vimercie/Documents/vimercie_GH/so_long
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/vimercie
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/vimercie/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = vimercie
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/vimercie/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+HOMEBREW_CACHE = /tmp/vimercie/Homebrew/Caches
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 25)
+CC = cc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = vimercie
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 1)
+NAME = so_long
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 19)
+INC = ${INCDIR}/so_long.h
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000bjlm002wcx/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/vimercie/Library/Application Support/Code/1.67.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1719D:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 5)
+OBJDIR = obj
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 23)
+LIBX = libmlx.dylib
+# environment
+SECURITYSESSIONID = 186a7
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 357
+# variable set hash-table stats:
+# Load=81/1024=8%, Rehash=0, Collisions=3/127=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777229, inode 3159901): 16 files, no impossibilities.
+# src (device 16777229, inode 3159988): 7 files, no impossibilities.
+
+# 23 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+obj/%.o: %.c inc/so_long.h
+#  commands to execute (from `Makefile', line 45):
+	${CC} ${CFLAGS} -Imlx -c $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+libx:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  Last modified 1970-01-01 00:59:56
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := libx
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  commands to execute (from `Makefile', line 38):
+	${MAKE} -C mlx
+	ln -sf mlx/libmlx.dylib
+	
+
+all: lib libx obj so_long
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+
+.PHONY: all clean fclean re froggy
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/mlx_main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-16 18:38:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+obj/parsing.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 53):
+	${RM} ${NAME}
+	${RM} ${LIB}
+	${RM} ${LIBX}
+	${RM} mlx/libmlx.dylib
+	
+
+lib:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := lib
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/12=17%
+#  commands to execute (from `Makefile', line 35):
+	${MAKE} -C Libft
+	
+
+obj:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 42):
+	mkdir -p obj
+	
+
+# Not a target:
+inc/so_long.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 48):
+	rm -rf ${OBJDIR}
+	make clean -C Libft
+	make clean -C mlx
+	
+
+# Not a target:
+ 
+obj/utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+froggy:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@tput setaf 2
+	@echo "                 db."
+	@echo "                d88P"
+	@echo "                88P"
+	@echo "         8P    d88"
+	@echo "         8     88P                                               d88"
+	@echo "        d8b   d88                                               d8P"
+	@echo "        888   88P                                             d88P"
+	@echo "        8888888P                                  ..od888888888P"
+	@echo "        8888888     d8b                       d88888888888888P       d8b"
+	@echo "        8888888   d88P                     .d888888888888888888888b d88P"
+	@echo "       d88888888888'                     d88888888888888888888888888P'"
+	@echo "      d888888888888                    d888888888888P888888b"
+	@echo "      8888888888d88b                   888888888888P888888888b..db"
+	@echo "     d88888888d88888b                  Y888888888K   Y8b     'Y8888"
+	@echo "     88888888d8888888b                  Y8888888888b  Y8b      'YP"
+	@echo "    d8888888d888888888b              ... 'Y8888888888b.YP  .d888888bo."
+	@echo "   d8888888d8888888888P         .od888888888b88d88888888888888888888888b."
+	@echo "   8888888d88888888888     .d88888888888888888888888888888888888888888888b."
+	@echo "   888888d88888888888P  .d8888888888888888888888888888888888888888888888888b"
+	@echo "   888888888888888888 d88888888888888888888888888888888888888888888888888888b"
+	@echo "  d88888d88888888888d88888888888888888888888888888888888888888888888888888888"
+	@echo "  88888d88888888888d88888888888888888888888888888888888888888888888888888888P"
+	@echo "  8888d88888888888d888888888888888888888888888888888888888888888888888888888"
+	@echo "  888888888888888d888888888888888888888888888888888888888888888888888888888P"
+	@echo "  88888888888888d888888888888888888888888888888888888888888888888888888888P"
+	@echo "  8888888888888d888888888888888888888888888888888888888888888888888888888P"
+	@echo "  Y888888888888888888888888888888888888888888888888888888888888888888888P"
+	@echo "   Y888Pd8888d888888888888888888888888888888888888888888888888888888888'"
+	@echo "       d888d88888888888888888888         88888888888888888888888888888P"
+	@echo "      .88d88888888888888888888   8888888   8888888888888888888888888P"
+	@echo "      :d8888888888888888888888   8888888   8888888888888888888P  ''"
+	@echo "      :88888888888888888888888   8888888   888888888888888888P"
+	@echo "      :88888888888888888888888   8888888   888888888888P8888P"
+	@echo "       8b88888888888888888888888          88888888888P888888"
+	@echo "       888b888888888888888888888888888888  888888888Pd88888P"
+	@echo "       '88888b8888888888888888888888888888  8888888Pd888888"
+	@echo "        Y88888888b8888888888888888888888888888888P d888888P"
+	@echo "         8888888888b888888888888888888888888888P'  8888888"
+	@echo "         '88888888888Y88888888888888888888888P     8888888b"
+	@echo "          Y888888888888Y8888888888888888888P       Y8888888      d88b"
+	@echo "           'Y8888888888b 'Y888888888888P'           Y888888b  d888P Y88"
+	@echo "             Y8888888888b     '''''''                 Y8888888888P"
+	@echo "              Y8888888888b                            Y888888888b      .db"
+	@echo " d8b.          Y8888888888                             Y88888888888888888P"
+	@echo " 8888888888888888888888888b                             Y88888888888bo."
+	@echo "d88888888888888888888888888                              Y888888888888888bo."
+	@echo "Y88888888888888888888888888b                              'Y8888888888888888888b"
+	@echo " 888888888888888888888888888                                Y88888888b      'P8P"
+	@echo " Y888b 'Y888888888888888888P                                   'Y88888b."
+	@echo "  8888b   'Y88888888888888P                                         'Y88b"
+	@echo "  Y8888.     'Y8888888888P                                            'Y8b."
+	@echo "   88888b         '''''                                                 'Y88"
+	@echo "   Y88888b"
+	@echo "    Y888888bo.  ."
+	@echo "     8888888888888"
+	@echo "     Y8888888b8b '"
+	@echo "      Y88888888b88b"
+	@echo "       Y888888b88b888b"
+	@echo "        Y888888bY88b8P"
+	@echo "         '888888b Y88bo."
+	@echo "          Y888888b  'Y8888b"
+	@echo "           Y888888b    'YP"
+	@echo "            8888888b"
+	@echo "            888P Y888b"
+	@echo "            Y88   'Y88b";
+	@echo "             Y8     Y88"
+	@echo "              8b     Y8b"
+	@echo "              88P     '8b"
+	@echo "              '8       Y8P"
+	
+
+so_long: obj/main.o obj/mlx_main.o obj/parsing.o obj/checking.o obj/utils.o inc/so_long.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 32):
+	${CC} ${OBJ} ${LIB} ${LIBX} -Lmlx -lmlx -framework OpenGL -framework AppKit -o ${NAME}
+	
+
+# Not a target:
+obj/checking.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=19/1024=2%, Rehash=0, Collisions=2/58=3%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# General (`VPATH' variable) search path:
+# src
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon May 16 18:39:15 2022
+
+ 

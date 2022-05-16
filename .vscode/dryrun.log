@@ -1,0 +1,19 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/vimercie/Documents/vimercie_GH/so_long'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C Libft
+ 
+make[1]: Entering directory `/Users/vimercie/Documents/vimercie_GH/so_long/Libft'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/Users/vimercie/Documents/vimercie_GH/so_long/Libft'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C mlx
+ 
+make[1]: Entering directory `/Users/vimercie/Documents/vimercie_GH/so_long/mlx'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/Users/vimercie/Documents/vimercie_GH/so_long/mlx'
+ 
+ln -sf mlx/libmlx.dylib
+cc -Wall -Wextra -Werror -Imlx -c src/mlx_main.c -o obj/mlx_main.o
+cc obj/main.o obj/mlx_main.o obj/parsing.o obj/checking.o obj/utils.o Libft/libft.a libmlx.dylib -Lmlx -lmlx -framework OpenGL -framework AppKit -o so_long
+make: Leaving directory `/Users/vimercie/Documents/vimercie_GH/so_long'
+ 

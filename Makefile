@@ -7,8 +7,10 @@ OBJDIR=		obj
 INCDIR=		inc
 
 SRC=		main.c						\
+			mlx_main.c					\
 			parsing.c					\
-			checking.c
+			checking.c					\
+			utils.c
 
 
 OBJ=		${addprefix ${OBJDIR}/,		\
@@ -18,32 +20,40 @@ INC=		${INCDIR}/so_long.h
 
 LIB=		Libft/libft.a
 
+LIBX=		libmlx.dylib
+
 CC=			cc
 
 CFLAGS=		-Wall -Wextra -Werror
 
-all:		lib ${OBJDIR} ${NAME}
+all:		lib libx ${OBJDIR} ${NAME}
 
-${NAME}:	${OBJ} ${INC} Libft/libft.h
-			${CC} ${OBJ} ${LIB} -o ${NAME}
+${NAME}:	${OBJ} ${INC}
+			${CC} ${OBJ} ${LIB} ${LIBX} -Lmlx -lmlx -framework OpenGL -framework AppKit -o ${NAME}
 
 lib:
 			${MAKE} -C Libft
+
+libx:
+			${MAKE} -C mlx
+			ln -sf mlx/libmlx.dylib
 
 ${OBJDIR}:
 			mkdir -p obj
 
 ${OBJDIR}/%.o:	%.c ${INC}
-			${CC} ${CFLAGS} -c $< -o $@
-
+			${CC} ${CFLAGS} -Imlx -c $< -o $@
 
 clean:
 			rm -rf ${OBJDIR}
 			make clean -C Libft
+			make clean -C mlx
 
 fclean:		clean
 			${RM} ${NAME}
 			${RM} ${LIB}
+			${RM} ${LIBX}
+			${RM} mlx/libmlx.dylib
 
 re:			fclean all
 
