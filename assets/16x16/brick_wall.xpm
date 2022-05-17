@@ -1,5 +1,5 @@
 /* XPM */
-static char *_217bccd12e94c51d1812ba32e35814e8SbGLUmWEOnNLFo2[] = {
+static char *brick_wall[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 2 1 ",
 "  c #BF360C",
