@@ -7,7 +7,7 @@ OBJDIR=		obj
 INCDIR=		inc
 
 SRC=		main.c						\
-			mlx_main.c					\
+			main_mlx.c					\
 			parsing.c					\
 			checking.c					\
 			utils.c

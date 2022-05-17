@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:04:50 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/16 18:37:26 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/17 03:56:26 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,18 @@
 
 int	main(int argc, char *argv[])
 {
-	char	*map;
-	int		map_width;
-	int		map_height;
+	t_vars	vars;
 
 	if (argc != 2)
 		return (0);
-	map = parsing(argv[1]);
-	if (!map)
+	vars.map = parsing(argv[1]);
+	if (!vars.map)
 		return (0);
-	if (!error_check(map))
+	if (!error_check(vars.map))
 		return (0);
-	map_width = get_map_width(map);
-	map_height = get_map_height(map);
-	mlx_main(map_width, map_height);
-	free(map);
+	vars.map_width = get_map_width(vars.map);
+	vars.map_height = get_map_height(vars.map);
+	main_mlx(vars);
+	free(vars.map);
 	return (0);
 }
