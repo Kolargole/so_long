@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/17 04:29:24 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/17 18:15:42 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,36 +21,53 @@
 # include "../Libft/inc/libft.h"
 # include "../mlx/mlx.h"
 
+typedef struct s_data
+{
+	int		size_x;
+	int		size_y;
+	char	*path;
+	void	*img;
+	char	*addr;
+	int		bits_per_pixel;
+	int		line_length;
+	int		endian;
+}				t_data;
+
 typedef struct s_mlx
 {
 	void	*ptr;
 	void	*win;
 }				t_mlx;
 
-typedef struct s_vars
-{
-	char	*map;
-	int		x;
-	int		y;
-	int		width;
-	int		height;
-	int		map_width;
-	int		map_height;
-	int		file_size;
-}				t_vars;
-
 typedef struct s_assets
 {
-	char	*wall;
-	char	*floor;
-	char	*collec;
-	char	*exit;
-	char	*p_right;
-	char	*p_left;
+	t_data	wall;
+	t_data	floor;
+	t_data	collec;
+	t_data	exit;
+	t_data	p_right;
+	t_data	p_left;
 }				t_assets;
 
+typedef struct s_vars
+{
+	void		*mlx;
+	void		*win;
+	t_assets	assets;
+	t_data		img;
+	// t_mlx		mlx;
+	char		*map;
+	int			x;
+	int			y;
+	int			width;
+	int			height;
+	int			map_width;
+	int			map_height;
+	int			file_size;
+}				t_vars;
+
 // mlx :
-void	main_mlx(t_vars vars);
+void	main_mlx(t_vars *vars);
 
 // parsing :
 char	*parsing(char *map_file);

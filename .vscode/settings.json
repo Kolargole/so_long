@@ -1,6 +1,4 @@
 {
-	"makefile.extensionOutputFolder": "./.vscode",
-	"files.associations": {
-		"libft.h": "c"
-	}
+	"makefile.defaultLaunchConfiguration": null ,
+	"editor.rulers": [80]
 }

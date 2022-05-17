@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:04:50 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/17 03:56:26 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/17 17:48:10 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(int argc, char *argv[])
 		return (0);
 	vars.map_width = get_map_width(vars.map);
 	vars.map_height = get_map_height(vars.map);
-	main_mlx(vars);
+	main_mlx(&vars);
 	free(vars.map);
 	return (0);
 }
