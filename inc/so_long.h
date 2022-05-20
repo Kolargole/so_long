@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:19:29 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:43:35 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,8 @@ typedef struct s_vars
 // mlx :
 void	main_mlx(t_vars *vars);
 void	put_image_to_image(t_data *screen, t_data *file, int x, int y);
-void	set_vars(t_vars *vars);
+void	xpm_to_image(vars);
+void	set_data_addr(t_vars *vars);
 void	display_map(t_vars *vars);
 
 // utils :

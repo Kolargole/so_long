@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 13:57:30 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:39:05 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:42:22 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,8 @@ void	xpm_to_image(t_vars	*vars)
 			&vars->assets.p_left.size_x, &vars->assets.p_left.size_y);
 }
 
-void	set_vars(t_vars *vars)
+void	set_data_addr(t_vars *vars)
 {
-	xpm_to_image(vars);
 	vars->assets.floor.addr = mlx_get_data_addr(vars->assets.floor.img,
 			&vars->assets.floor.bits_per_pixel,
 			&vars->assets.floor.line_length, &vars->assets.floor.endian);

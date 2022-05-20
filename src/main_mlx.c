@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:16:38 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:26:27 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:43:00 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,8 @@ void	main_mlx(t_vars *vars)
 	vars->height = vars->file_size * vars->map_height;
 	vars->mlx = mlx_init();
 	vars->win = mlx_new_window(vars->mlx, vars->width, vars->height, "so_long");
-	set_vars(vars);
+	xpm_to_image(vars);
+	set_data_addr(vars);
 	vars->img.img = mlx_new_image(vars->mlx, vars->width, vars->height);
 	vars->img.addr = mlx_get_data_addr(vars->img.img, &vars->img.bits_per_pixel,
 			&vars->img.line_length, &vars->img.endian);
