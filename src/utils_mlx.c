@@ -6,11 +6,16 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 13:57:30 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/20 17:56:09 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:14:48 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
+
+put_player_to_image(t_vars *vars)
+{
+	
+}
 
 void	xpm_to_image(t_vars	*vars)
 {
@@ -90,5 +95,26 @@ void	display_assets(t_vars *vars, int i)
 		vars->n_collec++;
 		put_image_to_image(&vars->img, &vars->assets.collec,
 			vars->x * vars->file_size, vars->y * vars->file_size);
+	}
+}
+
+void	display_map(t_vars *vars)
+{
+	int		i;
+
+	i = 0;
+	vars->x = 0;
+	vars->y = 0;
+	while (vars->map[i])
+	{
+		if (vars->map[i] == '\n')
+		{
+			vars->x = 0;
+			vars->y++;
+			i++;
+		}
+		display_assets(vars, i);
+		vars->x++;
+		i++;
 	}
 }

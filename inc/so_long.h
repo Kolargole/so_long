@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/20 18:03:01 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:19:29 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "../Libft/inc/libft.h"
+# include "../Libft/libft.h"
 # include "../mlx/mlx.h"
 
 typedef struct s_data
@@ -63,13 +63,15 @@ typedef struct s_vars
 	int			map_height;
 	int			file_size;
 	int			n_collec;
+	int			is_right;
+	int			n_step;
 }				t_vars;
 
 // mlx :
 void	main_mlx(t_vars *vars);
 void	put_image_to_image(t_data *screen, t_data *file, int x, int y);
 void	set_vars(t_vars *vars);
-void	display_assets(t_vars *vars, int i);
+void	display_map(t_vars *vars);
 
 // utils :
 int		get_map_width(char *map);

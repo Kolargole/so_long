@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:16:38 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/20 17:52:37 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:26:27 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,43 +20,22 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	*(unsigned int *)dst = color;
 }
 
-void	put_image_to_image(t_data *screen, t_data *file, int x, int y)
+void	put_image_to_image(t_data *screen, t_data *data, int x, int y)
 {
 	int	i;
 	int	j;
 
 	i = 0;
-	while (i < file->size_y)
+	while (i < data->size_y)
 	{
 		j = 0;
-		while (j < file->size_x)
+		while (j < data->size_x)
 		{
 			my_mlx_pixel_put(screen, x + j, y + i,
-				*((int *)(file->addr + (i * file->line_length + j
-							* (file->bits_per_pixel / 8)))));
+				*((int *)(data->addr + (i * data->line_length + j
+							* (data->bits_per_pixel / 8)))));
 			j++;
 		}
-		i++;
-	}
-}
-
-void	display_map(t_vars *vars)
-{
-	int		i;
-
-	i = 0;
-	vars->x = 0;
-	vars->y = 0;
-	while (vars->map[i])
-	{
-		if (vars->map[i] == '\n')
-		{
-			vars->x = 0;
-			vars->y++;
-			i++;
-		}
-		display_assets(vars, i);
-		vars->x++;
 		i++;
 	}
 }
