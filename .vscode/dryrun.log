@@ -14,5 +14,8 @@ make[1]: Leaving directory `/Users/vimercie/Documents/vimercie_GH/so_long/mlx'
  
 ln -sf mlx/libmlx.dylib
  
+cc -Wall -Wextra -Werror -Imlx -c src/movements.c -o obj/movements.o
+ 
+cc obj/main.o obj/utils.o obj/main_mlx.o obj/utils_mlx.o obj/events_mlx.o obj/parsing.o obj/checking.o obj/movements.o Libft/libft.a libmlx.dylib -Lmlx -lmlx -framework OpenGL -framework AppKit -o so_long
 make: Leaving directory `/Users/vimercie/Documents/vimercie_GH/so_long'
  

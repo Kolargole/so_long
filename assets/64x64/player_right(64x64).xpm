@@ -2,7 +2,7 @@
 static char *player_right_64x64_[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 11 1 ",
-"  c None",
+"  c #43A047",
 ". c black",
 "X c #131A5E",
 "o c #1A237E",

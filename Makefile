@@ -7,10 +7,13 @@ OBJDIR=		obj
 INCDIR=		inc
 
 SRC=		main.c						\
+			utils.c						\
 			main_mlx.c					\
+			utils_mlx.c					\
+			events_mlx.c				\
 			parsing.c					\
 			checking.c					\
-			utils.c
+			movements.c
 
 
 OBJ=		${addprefix ${OBJDIR}/,		\

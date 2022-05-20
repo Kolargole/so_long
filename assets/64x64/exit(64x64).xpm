@@ -2,7 +2,7 @@
 static char *exit_64x64_[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 10 1 ",
-"  c None",
+"  c #43A047",
 ". c black",
 "X c #263238",
 "o c #37474F",
