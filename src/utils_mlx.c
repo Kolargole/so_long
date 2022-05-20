@@ -6,16 +6,11 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 13:57:30 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:14:48 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/21 00:39:05 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
-
-put_player_to_image(t_vars *vars)
-{
-	
-}
 
 void	xpm_to_image(t_vars	*vars)
 {
