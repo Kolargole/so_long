@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:00:15 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/16 14:57:20 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/25 17:03:06 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,26 @@
 char	*parsing(char *map_file)
 {
 	int		fd;
-	int		i;
 	char	*map;
 	char	*buf;
 
 	fd = open(map_file, O_RDONLY);
-	i = 0;
+	if (fd < 0)
+		return (NULL);
 	map = NULL;
-	buf = ft_strdup("1");
+	buf = get_next_line(fd);
+	map = gnl_strjoin(map, buf);
 	while (buf)
 	{
 		buf = get_next_line(fd);
 		map = gnl_strjoin(map, buf);
-		i++;
 	}
+	free(buf);
 	close(fd);
 	return (map);
 }
 
-int	error_check(char *map)
+int	error_check(char *map, t_vars *vars)
 {
 	if (!shape_check(map))
 	{
@@ -47,10 +48,11 @@ int	error_check(char *map)
 		write(1, "Map isn't surrounded by walls\n", 30);
 		return (0);
 	}
-	if (!components_check(map))
+	if (!components_check(map, vars))
 	{
 		write(1, "Error\n", 6);
-		write(1, "Map's missing something\n", 24);
+		write(1, "Map's missing something or too much players/exits\n", 50);
+		return (0);
 	}
 	return (1);
 }

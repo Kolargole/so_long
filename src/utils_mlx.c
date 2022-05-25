@@ -6,11 +6,25 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 13:57:30 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:42:22 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/24 17:33:32 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
+
+void	set_pos(t_vars *vars, char asset)
+{
+	if (asset == 'P')
+	{
+		vars->pos_x = vars->x;
+		vars->pos_y = vars->y;
+	}
+	if (asset == 'E')
+	{
+		vars->exit_x = vars->x;
+		vars->exit_y = vars->y;
+	}
+}
 
 void	xpm_to_image(t_vars	*vars)
 {
@@ -72,21 +86,18 @@ void	display_assets(t_vars *vars, int i)
 			vars->x * vars->file_size, vars->y * vars->file_size);
 	else if (vars->map[i] == 'P')
 	{
+		set_pos(vars, 'P');
 		put_image_to_image(&vars->img, &vars->assets.p_right,
 			vars->x * vars->file_size, vars->y * vars->file_size);
-		vars->pos_x = vars->x;
-		vars->pos_y = vars->y;
 	}
 	else if (vars->map[i] == 'E')
 	{
-		vars->exit_x = vars->x;
-		vars->exit_y = vars->y;
+		set_pos(vars, 'E');
 		put_image_to_image(&vars->img, &vars->assets.c_exit,
 			vars->exit_x * vars->file_size, vars->exit_y * vars->file_size);
 	}
 	else if (vars->map[i] == 'C')
 	{
-		vars->n_collec++;
 		put_image_to_image(&vars->img, &vars->assets.collec,
 			vars->x * vars->file_size, vars->y * vars->file_size);
 	}

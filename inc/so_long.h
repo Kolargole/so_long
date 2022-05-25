@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:44:18 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/21 00:43:35 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/25 17:06:28 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "../Libft/libft.h"
+# include "../Libft/inc/libft.h"
 # include "../mlx/mlx.h"
 
 typedef struct s_data
@@ -62,15 +62,16 @@ typedef struct s_vars
 	int			map_width;
 	int			map_height;
 	int			file_size;
-	int			n_collec;
 	int			is_right;
+	int			n_collec;
 	int			n_step;
 }				t_vars;
 
 // mlx :
 void	main_mlx(t_vars *vars);
+int		close_window(t_vars *vars);
 void	put_image_to_image(t_data *screen, t_data *file, int x, int y);
-void	xpm_to_image(vars);
+void	xpm_to_image(t_vars *vars);
 void	set_data_addr(t_vars *vars);
 void	display_map(t_vars *vars);
 
@@ -80,15 +81,15 @@ int		get_map_height(char *map);
 
 // events :
 int		key_hook(int key_code, t_vars *vars);
-int		event_hook(t_vars *vars);
-void	movements(int key_code, t_vars *vars);
+int		movements(int key_code, t_vars *vars);
+int		which_way(int key_code, t_vars *vars);
 int		whats_ahead(t_vars *vars, int x, int y);
 
 // parsing :
 char	*parsing(char *map_file);
-int		error_check(char *map);
+int		error_check(char *map, t_vars *vars);
 int		shape_check(char *map);
 int		wall_check(char *map);
-int		components_check(char *map);
+int		components_check(char *map, t_vars *vars);
 
 #endif

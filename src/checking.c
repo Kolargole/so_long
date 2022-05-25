@@ -6,7 +6,7 @@
 /*   By: vimercie <vimercie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 02:20:27 by vimercie          #+#    #+#             */
-/*   Updated: 2022/05/14 03:26:29 by vimercie         ###   ########lyon.fr   */
+/*   Updated: 2022/05/24 17:32:34 by vimercie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ int	wall_check(char *map)
 	return (midwall_check(map, i, len));
 }
 
-int	components_check(char *map)
+int	components_check(char *map, t_vars *vars)
 {
 	int	i;
 	int	p;
@@ -105,7 +105,8 @@ int	components_check(char *map)
 			c++;
 		i++;
 	}
-	if (p == 0 || e == 0 || c == 0)
+	if (p != 1 || e != 1 || c == 0)
 		return (0);
+	vars->n_collec = c;
 	return (1);
 }
